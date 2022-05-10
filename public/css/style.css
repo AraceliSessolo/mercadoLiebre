@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+;
+
+/* ---------------------- GENERAL ---------------------- */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background: var(--gris-claro);
+    margin: 0;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+    width: 30%;
+    margin: 0;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: var(--verde);
+    width: 70%;
+    text-align: right;
+    margin: 0;
+}
+
+.descripciones {
+    font-size: 16px;
+    color: var(--gris-oscuro);
+}
+
+
+/* ---------------------- HEADER ---------------------- */
+
+header {
+    background-color: var(--amarillo);
+    padding: 20px;
+}
+
+.emojis2 {
+    width: 12px;
+    background-color: var(--gris-claro);
+    padding: 3px;
+    border: 1px solid var(--gris-oscuro);
+}
+
+.lista1 a,
+.lista2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.lista1 li,
+.lista2 li {
+    list-style-type: none;
+}
+
+.compraEnCuotas {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+nav {
+    display: none;
+}
+
+.filaUnoHeader{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+}
+
+.filaUnoHeader a{
+    width: 50%;
+}
+
+.logo {
+    width: 100%;
+}
+
+/* -------- Search Bar -------- */
+
+.buscador{
+    width: 45%;
+    text-align: center;
+    margin: auto;
+}
+
+.buscador input{
+    max-width: 75%;
+}
+.buscador i{
+    max-width: 10%;
+}
+
+/* -------- Icono Hamburguesa -------- */
+.fa-bars {
+    background-color: var(--celeste);
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+
+/* ---------------------- BANNER ---------------------- */
+.banner {
+    width: 100%;
+}
+
+/* ---------------------- MAIN ---------------------- */
+
+main {
+    width: 90%;
+    margin-left: 5%;
+}
+
+main img {
+    width: 100%;
+}
+
+main section article {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.descripcionArticulo {
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.descripciones {
+    display: none;
+}
+
+main section article{
+    position: relative;
+}
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--verde);
+    color: var(--verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    left: 68%;
+    top: 250px;     /* VER MARGEN SUPERIOR - DUDAS*/
+}
+
+
+
+
+/* ---------------------- PIE DE PÁGINA ---------------------- */
+footer {
+    text-align: center;
+    color: var(--gris-oscuro);
+    margin-top: 20px;
+}
+
+footer i {
+    width: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste)
+}
+
+.subtituloFooter {
+    font-weight: bold;
+}
+
+
+
+/* ---------------------- LOGIN ---------------------- */
+
+.formLoginRegister{
+    border: 1px solid var(--gris-claro);
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}
+
+.formLoginRegister div{
+    margin-top: 15px;
+}
+
+.formLoginRegister label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formLoginRegister input{
+    border: 1px solid var(--gris-claro);
+    border-radius: 5px;
+    height: 20px;
+}
+
+
+.boton1{
+    background-color: var(--celeste);
+    color: white;
+    border-radius: 5px;
+    border: 1px var(--celeste) solid;
+    padding: 5px 0px;
+    width: 100px;
+    font-weight: bold;
+    margin: 10px 5px 0px 5px;
+}
+.boton1:hover{
+    background-color: #0022AA;
+}
+
+.boton2{
+    background-color: var(--gris-claro);
+    color: var(--celeste);
+    border-radius: 5px;
+    border: 1px var(--gris-oscuro) solid;
+    padding: 5px 0px;
+    width: 100px;
+    font-weight: bold;
+    margin: 10px 5px 0px 5px;
+
+}
+
+#fotoUsuario{
+    width: 90%;
+}
+
+.opcionesPerfil{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.opcionesCategorias{
+    text-align: left;
+    margin-left: 25%;
+}
+
+
+
+/* ---------------------- ANIMACIONES ---------------------- */
+
+.fa-truck:hover{
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+
+
+/* ---------------------- RESPONSIVE ---------------------- */
+
+/* ---------------------- TABLET ---------------------- */
+@media (min-width: 361px) {
+
+    /* .descripciones {
+        display: inline-block;
+    } */
+
+    /* .descripciones:hover {
+        display: block;
+    } */
+
+
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        border-radius: 5px;
+    }
+
+    main section article:hover .descripciones{
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lista1, .lista2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px;
+        width: 45%;
+    }
+
+
+    .filaUnoHeader{
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        justify-content: center;
+    }
+    
+    .filaUnoHeader a{
+        width: 26%;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 190px;
+    }
+    
+    .buscador{
+        width: 26%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .compraEnCuotas{
+        width: 30%;
+        text-align: right;
+    }
+    
+    .buscador input{
+        max-width: 75%;
+    }
+    .buscador i{
+        max-width: 10%;
+    }
+   
+
+    .burger-menu {
+        display: none;
+    }
+
+    /* ---------------VER ------------------ */
+    .section1,
+    .section2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main section div article {
+        width: 38%;
+    }
+    
+    .opcionesCategorias{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+/* ---------------------- DESKTOP ---------------------- */
+
+@media (min-width: 769px) {
+
+    .section1,
+    .section2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .section1 article,
+    .section2 article {
+        width: 17%;
+    }
+
+    .footerDescripciones{
+        display: flex;
+        justify-content: center;
+    }
+
+    .precios, .descuentos{
+        font-size: 16px;
+    }
+}
